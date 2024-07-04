@@ -14,11 +14,11 @@ struct HabitRowView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(titleText)
-                .padding()
+                .padding(.vertical, 0.5)
                 .font(.headline)
             
             Text(descriptionText)
-                .padding()
+                .padding(.vertical, 0.5)
                 .font(.subheadline)
         }
     }
