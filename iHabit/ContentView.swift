@@ -8,12 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isShowingSheet = false
+    
     var body: some View {
         NavigationStack {
             VStack {
                 Text("Hello")
             }
             .navigationTitle("iHabit")
+            .toolbar {
+                Button {
+                    isShowingSheet.toggle()
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
+            .sheet(isPresented: $isShowingSheet) {
+                AddHabitView()
+            }
         }
     }
 }
