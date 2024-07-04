@@ -15,7 +15,9 @@ struct ContentView: View {
         NavigationStack {
             List {
                 ForEach(habits.habits) { habit in
-                    HabitRowView(titleText: habit.title, descriptionText: habit.description)
+                    NavigationLink(destination: DescriptionView(habits: habits, habit: habit)) {
+                        HabitRowView(titleText: habit.title, descriptionText: habit.description, completionNumber: habit.numberOfCompletions)
+                    }
                 }
                 .onDelete(perform: deleteHabit)
             }

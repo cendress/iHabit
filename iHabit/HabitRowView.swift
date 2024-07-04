@@ -19,11 +19,9 @@ struct HabitRowView: View {
                 .font(.headline)
             
             Text(descriptionText)
-                .padding(.vertical, 0.5)
                 .font(.subheadline)
             
-            Text("Number of Completions: \(completionNumber)")
-                .padding(.vertical, 0.5)
+            Text("Completion Amount: \(completionNumber)")
                 .font(.subheadline)
         }
     }
