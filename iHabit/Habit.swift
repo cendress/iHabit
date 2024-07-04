@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Habit: Identifiable, Codable {
+struct Habit: Identifiable, Codable, Equatable {
     var id = UUID()
     let title: String
     let description: String
-    let numberOfCompletions: Int
+    var numberOfCompletions: Int
 }

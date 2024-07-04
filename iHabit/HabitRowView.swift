@@ -20,9 +20,6 @@ struct HabitRowView: View {
             
             Text(descriptionText)
                 .font(.subheadline)
-            
-            Text("Completion Amount: \(completionNumber)")
-                .font(.subheadline)
         }
     }
 }

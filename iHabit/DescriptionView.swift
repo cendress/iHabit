@@ -10,15 +10,11 @@ import SwiftUI
 struct DescriptionView: View {
     @Environment(\.dismiss) var dismiss
     @ObservedObject var habits: Habits
-    @State private var completionAmount = 1
     var habit: Habit
     
     var body: some View {
         NavigationStack {
-            VStack(alignment: .leading) {
-                Stepper("Completion Amount: \(completionAmount)", value: $completionAmount, in: 1...100)
-                    .padding()
-                
+            VStack {
                 Text(habit.description)
                     .padding()
                 
@@ -26,13 +22,6 @@ struct DescriptionView: View {
             
             }
             .navigationTitle(habit.title)
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") {
-                        dismiss()
-                    }
-                }
-            }
         }
     }
 }
