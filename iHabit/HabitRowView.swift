@@ -10,6 +10,7 @@ import SwiftUI
 struct HabitRowView: View {
     var titleText: String
     var descriptionText: String
+    var completionNumber: Int
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -20,10 +21,14 @@ struct HabitRowView: View {
             Text(descriptionText)
                 .padding(.vertical, 0.5)
                 .font(.subheadline)
+            
+            Text("Number of Completions: \(completionNumber)")
+                .padding(.vertical, 0.5)
+                .font(.subheadline)
         }
     }
 }
 
 #Preview {
-    HabitRowView(titleText: "Ride Bike", descriptionText: "I want to ride a bike once a day.")
+    HabitRowView(titleText: "Ride Bike", descriptionText: "I want to ride a bike once a day.", completionNumber: 1)
 }

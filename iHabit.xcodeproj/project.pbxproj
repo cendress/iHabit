@@ -15,6 +15,7 @@
 		9D3449222C36CB1000132FD3 /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3449212C36CB1000132FD3 /* AddHabitView.swift */; };
 		9D3449242C36CE5400132FD3 /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3449232C36CE5400132FD3 /* Habits.swift */; };
 		9DDADA882C36D4F700338413 /* HabitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDADA872C36D4F700338413 /* HabitRowView.swift */; };
+		9DDADA8A2C36DCDA00338413 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDADA892C36DCDA00338413 /* DescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		9D3449212C36CB1000132FD3 /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
 		9D3449232C36CE5400132FD3 /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
 		9DDADA872C36D4F700338413 /* HabitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitRowView.swift; sourceTree = "<group>"; };
+		9DDADA892C36DCDA00338413 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				9D3449132C36C98600132FD3 /* ContentView.swift */,
 				9DDADA872C36D4F700338413 /* HabitRowView.swift */,
 				9D3449212C36CB1000132FD3 /* AddHabitView.swift */,
+				9DDADA892C36DCDA00338413 /* DescriptionView.swift */,
 				9D34491F2C36CA6A00132FD3 /* Habit.swift */,
 				9D3449232C36CE5400132FD3 /* Habits.swift */,
 				9D3449152C36C98900132FD3 /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D3449202C36CA6A00132FD3 /* Habit.swift in Sources */,
+				9DDADA8A2C36DCDA00338413 /* DescriptionView.swift in Sources */,
 				9D3449242C36CE5400132FD3 /* Habits.swift in Sources */,
 				9DDADA882C36D4F700338413 /* HabitRowView.swift in Sources */,
 				9D3449142C36C98600132FD3 /* ContentView.swift in Sources */,
