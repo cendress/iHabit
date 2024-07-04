@@ -7,15 +7,20 @@
 
 import SwiftUI
 
-struct AddHabit: View {
+struct AddHabitView: View {
     @Environment(\.dismiss) var dismiss
+    
+    @State private var name = ""
+    @State private var description = ""
     
     var body: some View {
         NavigationStack {
             Form {
+                TextField("Enter a name", text: $name)
                 
+                TextField("Enter a description", text: $description)
             }
-            .navigationTitle("Add Habit")
+            .navigationTitle("Add New Habit")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Save") {
@@ -34,5 +39,5 @@ struct AddHabit: View {
 }
 
 #Preview {
-    AddHabit()
+    AddHabitView()
 }

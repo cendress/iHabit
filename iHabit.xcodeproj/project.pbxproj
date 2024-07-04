@@ -12,7 +12,8 @@
 		9D3449162C36C98900132FD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3449152C36C98900132FD3 /* Assets.xcassets */; };
 		9D3449192C36C98900132FD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3449182C36C98900132FD3 /* Preview Assets.xcassets */; };
 		9D3449202C36CA6A00132FD3 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D34491F2C36CA6A00132FD3 /* Habit.swift */; };
-		9D3449222C36CB1000132FD3 /* AddHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3449212C36CB1000132FD3 /* AddHabit.swift */; };
+		9D3449222C36CB1000132FD3 /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3449212C36CB1000132FD3 /* AddHabitView.swift */; };
+		9D3449242C36CE5400132FD3 /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3449232C36CE5400132FD3 /* Habits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +23,8 @@
 		9D3449152C36C98900132FD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3449182C36C98900132FD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D34491F2C36CA6A00132FD3 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
-		9D3449212C36CB1000132FD3 /* AddHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabit.swift; sourceTree = "<group>"; };
+		9D3449212C36CB1000132FD3 /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
+		9D3449232C36CE5400132FD3 /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,9 @@
 			children = (
 				9D3449112C36C98600132FD3 /* iHabitApp.swift */,
 				9D3449132C36C98600132FD3 /* ContentView.swift */,
+				9D3449212C36CB1000132FD3 /* AddHabitView.swift */,
 				9D34491F2C36CA6A00132FD3 /* Habit.swift */,
-				9D3449212C36CB1000132FD3 /* AddHabit.swift */,
+				9D3449232C36CE5400132FD3 /* Habits.swift */,
 				9D3449152C36C98900132FD3 /* Assets.xcassets */,
 				9D3449172C36C98900132FD3 /* Preview Content */,
 			);
@@ -144,8 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D3449202C36CA6A00132FD3 /* Habit.swift in Sources */,
+				9D3449242C36CE5400132FD3 /* Habits.swift in Sources */,
 				9D3449142C36C98600132FD3 /* ContentView.swift in Sources */,
-				9D3449222C36CB1000132FD3 /* AddHabit.swift in Sources */,
+				9D3449222C36CB1000132FD3 /* AddHabitView.swift in Sources */,
 				9D3449122C36C98600132FD3 /* iHabitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
