@@ -7,7 +7,10 @@
 
 import SwiftUI
 
-@Observable
-class Habits {
-    var habits = [Habit].self
+class Habits: ObservableObject {
+    @Published var habits = [Habit]()
+    
+    func addHabit(_ habit: Habit) {
+        habits.append(habit)
+    }
 }

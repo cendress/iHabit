@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddHabitView: View {
     @Environment(\.dismiss) var dismiss
+    @ObservedObject var habits: Habits
     
     @State private var name = ""
     @State private var description = ""
@@ -20,11 +21,14 @@ struct AddHabitView: View {
                 
                 TextField("Enter a description", text: $description)
             }
-            .navigationTitle("Add New Habit")
+            .navigationTitle("Add Habit")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Save") {
-                        // save habit and dismiss view
+                        let newHabit = Habit(title: name, description: description, numberOfCompletions: 0)
+                        
+                        habits.addHabit(newHabit)
+                        dismiss()
                     }
                 }
                 
@@ -39,5 +43,5 @@ struct AddHabitView: View {
 }
 
 #Preview {
-    AddHabitView()
+    AddHabitView(habits: Habits())
 }

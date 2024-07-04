@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var habits = Habits()
     @State private var isShowingSheet = false
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Hello")
+            List {
+                ForEach(habits.habits) { habit in
+                    
+                }
             }
             .navigationTitle("iHabit")
             .toolbar {
@@ -24,7 +27,7 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $isShowingSheet) {
-                AddHabitView()
+                AddHabitView(habits: habits)
             }
         }
     }
