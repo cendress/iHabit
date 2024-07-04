@@ -17,19 +17,30 @@ struct ContentView: View {
                 ForEach(habits.habits) { habit in
                     HabitRowView(titleText: habit.title, descriptionText: habit.description)
                 }
+                .onDelete(perform: deleteHabit)
             }
             .navigationTitle("iHabit")
             .toolbar {
-                Button {
-                    isShowingSheet.toggle()
-                } label: {
-                    Image(systemName: "plus")
+                ToolbarItem(placement: .topBarLeading) {
+                    EditButton()
+                }
+                
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        isShowingSheet.toggle()
+                    } label: {
+                        Image(systemName: "plus")
+                    }
                 }
             }
             .sheet(isPresented: $isShowingSheet) {
                 AddHabitView(habits: habits)
             }
         }
+    }
+    
+    private func deleteHabit(at offsets: IndexSet) {
+        habits.habits.remove(atOffsets: offsets)
     }
 }
 
